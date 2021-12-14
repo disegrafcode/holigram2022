@@ -73,31 +73,28 @@
 .itemGallery16Active .descriItemGallery16 h3::after {
     display: none;
 }
-.navbarCustomDark,.navbarCustomLight
-{
+
+.navbarCustomDark, .navbarCustomLight {
     z-index: 999;
 }
-.navbarCustomDark,.navbarCustomLight a
-{
+
+.navbarCustomDark, .navbarCustomLight a {
     font-size: 14px;
 }
-.navbarCustomDark .logoDarkVersion,.navbarCustomDark .iconDarkVersion
-{
+
+.navbarCustomDark .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     display: block;
 }
 
-.navbarCustomDark .logoLightVersion, .navbarCustomDark .iconLightVersion
-{
+.navbarCustomDark .logoLightVersion, .navbarCustomDark .iconLightVersion {
     display: none;
 }
 
-.navbarCustomLight .logoDarkVersion, .navbarCustomLight .iconDarkVersion
-{
+.navbarCustomLight .logoDarkVersion, .navbarCustomLight .iconDarkVersion {
     display: none;
 }
 
-.navbarCustomLight .logoLightVersion, .navbarCustomLight .iconLightVersion
-{
+.navbarCustomLight .logoLightVersion, .navbarCustomLight .iconLightVersion {
     display: block;
 }
 
@@ -108,7 +105,7 @@
     left: 50%;
     width: 1rem;
     height: 1rem;
-    margin-left: -12px;    
+    margin-left: -12px;
     -webkit-animation: scrollDown 1.4s infinite;
     animation: scrollDown 1.4s infinite;
     z-index: 8;
@@ -172,8 +169,33 @@
 }
 
 /* NOSOTROS */
-.itemNosotros
-{
+.itemNosotros {
     min-width: 200px;
+}
+
+#sliderNosotros {
+    width: 100%;
+    height: 100%;
+}
+
+#sliderNosotros .swiper-slide {
+    width: 60% !important;
+}
+
+.queNosDiferencia .col-lg-3
+{
+    border-right: solid 1px white;
+}
+
+.queNosDiferencia .col-lg-3:last-child
+{
+    border-right: none;
+}
+@media only screen and (max-width:991px)
+{
+    .queNosDiferencia .col-lg-3
+    {
+        border-right: none;
+    }
 }
 /* NOSOTROS */
