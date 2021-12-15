@@ -27,7 +27,7 @@
 
 .verticalAccordeon .itemAccordeon {
     display: block;
-    background-color: antiquewhite;
+    background-color: rgb(128, 128, 128);
     position: relative;
     width: auto;
 
@@ -45,10 +45,6 @@
 
     cursor: pointer;
 
-    -webkit-transition: all 2s ease-out;
-    -moz-transition: all 2s ease-out;
-    -o-transition: all 2s ease-out;
-    transition: all 2s ease-out;
 }
 .verticalAccordeon .itemAccordeon::after
 {
@@ -64,9 +60,36 @@
 .verticalAccordeon .itemAccordeon.activeItemAcordeon
 {
     width: 50%;
-    background-color: white;
+    background-color: rgb(240, 240, 240);
+    animation: introAccordeon 1s ease-in-out 0s 1 normal forwards;
 }
 
+@keyframes introAccordeon {
+    0% {
+        width: 0%;
+    }
+  
+    100% {
+        width: 50%;
+    }
+}
+
+.exitAccordeonAnimation
+{
+    width: 0%;
+    
+    animation: exitAccordeon 1s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes exitAccordeon {
+    0% {
+        width: 50%;
+    }
+  
+    100% {
+        width: 0%;
+    }
+}
 
 .textAccordeon
 {
@@ -85,12 +108,24 @@
     overflow: hidden;
     text-overflow: ellipsis;
 
-    -webkit-transition: all .8s ease-out;
-    -moz-transition: all .8s ease-out;
-    -o-transition: all .8s ease-out;
-    transition: all .8s ease-out;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
 }
-
+.verticalAccordeon .itemAccordeon .contenidoAccordeon
+{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: none;
+    position: relative;
+    overflow: auto;
+}
+.verticalAccordeon .itemAccordeon.activeItemAcordeon .contenidoAccordeon
+{
+    display: block;
+}
 .verticalAccordeon .itemAccordeon.activeItemAcordeon .textAccordeon, .verticalAccordeon .itemAccordeon.activeItemAcordeon::after
 {
     display: none;
@@ -122,5 +157,40 @@
     {
         background: rgb(0,0,0);
         background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,1) 100%);
+    }
+
+    .verticalAccordeon .itemAccordeon.activeItemAcordeon
+    {
+        width: 100%;
+        height: 325px;        
+        animation: introAccordeon 1s ease-in-out 0s 1 normal forwards;
+    }
+
+    @keyframes introAccordeon {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 325px;
+        }
+    }
+    .exitAccordeonAnimation
+    {
+        height: 0;
+        animation: exitAccordeon 1s ease-in-out 0s 1 normal forwards;
+    }
+
+    @keyframes exitAccordeon {
+        0% {
+            height: 325px;
+        }
+    
+        100% {
+            height: 180px;
+        }
+    }
+    .verticalAccordeon .itemAccordeon.itemAccordeonInactive .textAccordeon {
+        transform: translate(-50%,-50%) rotate(0deg);
+        height: auto;
     }
 }
