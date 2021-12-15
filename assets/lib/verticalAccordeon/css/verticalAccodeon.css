@@ -1,10 +1,126 @@
-.verticalAccordeon
-{
+.verticalAccordeon {
     width: 100%;
     position: relative;
+    min-height: 800px;
+
+    /* FLEXBOX */
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    /* FLEXBOX */
 }
 
-.verticalAccordeon .itemAccordeon
-{
+.verticalAccordeon .itemAccordeon {
+    display: block;
+    background-color: antiquewhite;
+    position: relative;
+    width: auto;
 
+    /* FLEXBOX */
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    /* FLEXBOX */
+
+    cursor: pointer;
+
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
+.verticalAccordeon .itemAccordeon::after
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,1) 100%);
+    z-index: 1;
+}
+
+.verticalAccordeon .itemAccordeon.activeItemAcordeon
+{
+    width: 50%;
+    background-color: white;
+}
+
+
+.textAccordeon
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    color: white;
+    z-index: 5;
+    text-align: center;
+    font-size: 14px;
+
+    height: 42px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    -webkit-transition: all .8s ease-out;
+    -moz-transition: all .8s ease-out;
+    -o-transition: all .8s ease-out;
+    transition: all .8s ease-out;
+}
+
+.verticalAccordeon .itemAccordeon.activeItemAcordeon .textAccordeon, .verticalAccordeon .itemAccordeon.activeItemAcordeon::after
+{
+    display: none;
+}
+
+.verticalAccordeon .itemAccordeon.itemAccordeonInactive .textAccordeon {
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: auto;
+}
+
+@media only screen and (max-width:1200px)
+{
+    .textAccordeon
+    {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:991px)
+{
+    .verticalAccordeon .itemAccordeon
+    {
+        width: 100%;
+        height: 180px;
+    }
+    .verticalAccordeon {
+        display: block;
+    }
+    .verticalAccordeon .itemAccordeon::after
+    {
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,1) 100%);
+    }
 }
