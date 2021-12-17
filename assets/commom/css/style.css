@@ -206,3 +206,15 @@
 }
 /* NOSOTROS */
 
+/* EVENTOS DETALLE */
+
+#slider2 img
+{
+    padding-left: 60px;
+}
+#slider2 .swiper-slide {
+    width: 30% !important;
+    background-color: brown;
+}
+/* EVENTOS DETALLE */
+
