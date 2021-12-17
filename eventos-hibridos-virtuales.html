@@ -340,33 +340,89 @@
         </div>
     </section>
 
-    <section>
+    <section class="py-5">
         <div class="swiper mySwiper" id="slider2">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
-              </div>
-              <div class="swiper-slide">
-                <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                <div class="swiper-slide">
+                    <div class="textInfoSlider2">
+                        <h3 class="mb-md-4 md-0">Título</h3>
+                        <p>
+                            This evening is an opportunity for brands within the Molson Coors portfolio to showcase new
+                            offerings and updates
+                            while having valuable one-on-one interactions with distributors.
+                        </p>
+                    </div>
+                    <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <div class="textInfoSlider2">
+                        <h3 class="mb-md-4 md-0">Título</h3>
+                        <p>
+                            This evening is an opportunity for brands within the Molson Coors portfolio to showcase new
+                            offerings and updates
+                            while having valuable one-on-one interactions with distributors.
+                        </p>
+                    </div>
+                    <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <div class="textInfoSlider2">
+                        <h3 class="mb-md-4 md-0">Título</h3>
+                        <p>
+                            This evening is an opportunity for brands within the Molson Coors portfolio to showcase new
+                            offerings and updates
+                            while having valuable one-on-one interactions with distributors.
+                        </p>
+                    </div>
+                    <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <div class="textInfoSlider2">
+                        <h3 class="mb-md-4 md-0">Título</h3>
+                        <p>
+                            This evening is an opportunity for brands within the Molson Coors portfolio to showcase new
+                            offerings and updates
+                            while having valuable one-on-one interactions with distributors.
+                        </p>
+                    </div>
+                    <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <div class="textInfoSlider2">
+                        <h3 class="mb-md-4 md-0">Título</h3>
+                        <p>
+                            This evening is an opportunity for brands within the Molson Coors portfolio to showcase new
+                            offerings and updates
+                            while having valuable one-on-one interactions with distributors.
+                        </p>
+                    </div>
+                    <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <div class="textInfoSlider2">
+                        <h3 class="mb-md-4 md-0">Título</h3>
+                        <p>
+                            This evening is an opportunity for brands within the Molson Coors portfolio to showcase new
+                            offerings and updates
+                            while having valuable one-on-one interactions with distributors.
+                        </p>
+                    </div>
+                    <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <div class="textInfoSlider2">
+                        <h3 class="mb-md-4 md-0">Título</h3>
+                        <p>
+                            This evening is an opportunity for brands within the Molson Coors portfolio to showcase new
+                            offerings and updates
+                            while having valuable one-on-one interactions with distributors.
+                        </p>
+                    </div>
+                    <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                </div>
             </div>
-            <div class="swiper-slide">
-                <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
-            </div>
-            <div class="swiper-slide">
-                <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
-            </div>
-            <div class="swiper-slide">
-                <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
-            </div>
-            <div class="swiper-slide">
-                <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
-            </div>
-            <div class="swiper-slide">
-                <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
-            </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
+            <div class="swiper-pagination position-relative mt-4"></div>
+        </div>
     </section>
 
     <section class="py-5 bg-primary"
@@ -472,7 +528,37 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
+            breakpoints: {
+                1024: {
+                    centeredSlides: true,
+                },            
+                992: {
+                    centeredSlides: true,
+                },
+                0: {
+                    centeredSlides: false,
+                },
+            },
         });
+
+        swiper2.on('slideChange', function () {
+            clearAllSlidersSwiper2();
+            showActiveSliderSwiper2();
+        });
+
+        function clearAllSlidersSwiper2() {
+            for (let i = 0; i < swiper2.slides.length; i++) {
+                swiper2.slides[i].classList.remove("swiper2Active");
+            }
+        }
+
+        function showActiveSliderSwiper2()
+        {
+            let numSlide = swiper2.activeIndex;
+            let currentSlide = swiper2.slides[numSlide];
+            currentSlide.classList.add("swiper2Active");
+        }
+        showActiveSliderSwiper2();
     </script>
 
     <script src="assets/commom/js/main.js"></script>

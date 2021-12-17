@@ -210,11 +210,104 @@
 
 #slider2 img
 {
-    padding-left: 60px;
+    padding-left: 190px;
 }
 #slider2 .swiper-slide {
-    width: 30% !important;
-    background-color: brown;
+    width: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
 }
+.textInfoSlider2
+{
+    width: 80%;
+    max-width: 650px;
+    padding: 50px;
+    background-color: white;
+    position: absolute;
+    z-index: 22;
+    height: 60%;
+    max-height: 400px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0.05rem 1rem rgba(0, 0, 255, .15);
+    margin-left: -200px;
+    overflow: auto;
+    display: none;
+}
+.swiper2Active .textInfoSlider2
+{
+    display: block;
+}
+.swiper2Active img
+{
+    padding-left: 150px !important;
+}
+
+@media only screen and (max-width:1400px){
+    #slider2 .swiper-slide {
+        width: 60%;
+    }
+    .textInfoSlider2
+    {
+        margin-left: -150px;
+        
+    }
+}
+@media only screen and (max-width:1200px){
+    .textInfoSlider2
+    {
+        height: 70%;
+        max-height: 400px;
+    }
+}
+@media only screen and (max-width:991px){
+    #slider2 .swiper-slide {
+        width: 100%;
+        padding-top: 200px;
+        padding-bottom: 40px;
+        position: relative;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #slider2 img
+    {
+        padding-left: initial;
+    }
+    .textInfoSlider2
+    {
+        width: 75%;
+        transform: initial;
+        left: 12.5%;
+        top: 150px;
+        margin-left: initial;
+        max-width: initial;
+        min-height: 200px;
+        height: auto;
+        font-size: 14px;        
+    }
+    .swiper2Active img
+    {
+        padding-left: initial !important;
+    }
+}
+@media only screen and (max-width:768px){
+    #slider2 .swiper-slide {
+        width: 100%;
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 150px;
+    }
+    .textInfoSlider2
+    {
+        width: 90%;
+        left: 5%;
+        top: 50px;
+        padding: 25px;
+    }
+}
+
 /* EVENTOS DETALLE */
 
