@@ -175,6 +175,28 @@
 
 }
 
+.customMenuH14_v2 {
+    position: fixed;
+    background-color: black;
+    color: white;
+    width: 325px;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 20px;
+    z-index: 9595;
+
+    animation: navbarH14Animation 1s ease 0s 1 normal forwards;
+}
+.customMenuH14_v2 ul {
+    margin-top: 25px;
+}
+
+.customMenuH14_v2 ul li a {
+    color: white !important;
+}
+
+
 @keyframes navbarH14Animation {
     0% {
         transform: scaleX(0.4);
