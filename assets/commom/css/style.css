@@ -1,3 +1,23 @@
+.backgroundCover
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.gradient_0_dark::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 25;
+    pointer-events: none;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);
+}
 .customListBody16 li::before {
     content: "/";
     display: inline-block;
@@ -69,6 +89,7 @@
     padding: 0;
     margin-top: 5px;
 }
+
 
 .itemGallery16Active .descriItemGallery16 h3::after {
     display: none;
@@ -210,7 +231,7 @@
 
 #slider2 img
 {
-    padding-left: 190px;
+    padding-left: 190px;    
 }
 #slider2 .swiper-slide {
     width: 50%;
@@ -228,7 +249,7 @@
     z-index: 22;
     height: 60%;
     max-height: 400px;
-    left: 0;
+    left: 12%;
     top: 50%;
     transform: translateY(-50%);
     box-shadow: 0 0.05rem 1rem rgba(0, 0, 255, .15);
@@ -239,21 +260,37 @@
 .swiper2Active .textInfoSlider2
 {
     display: block;
+    animation: scaleInEntrada .5s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s 1 normal forwards;
+}
+@keyframes scaleInEntrada {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
 }
 .swiper2Active img
 {
-    padding-left: 150px !important;
+    padding-left: 150px;
+    animation: animacionEntradaImagen .5s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s 1 normal forwards;
 }
+@keyframes animacionEntradaImagen {
+    0% {
+        transform: translateX(150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
 
 @media only screen and (max-width:1400px){
     #slider2 .swiper-slide {
         width: 60%;
-    }
-    .textInfoSlider2
-    {
-        margin-left: -150px;
-        
-    }
+    }    
 }
 @media only screen and (max-width:1200px){
     .textInfoSlider2
@@ -274,6 +311,7 @@
     #slider2 img
     {
         padding-left: initial;
+        margin-top: initial;
     }
     .textInfoSlider2
     {
@@ -304,10 +342,69 @@
     {
         width: 90%;
         left: 5%;
-        top: 50px;
+        top: initial;
         padding: 25px;
     }
 }
-
 /* EVENTOS DETALLE */
+
+/* SOLUCIONES */
+.imgLogoMarcas
+{
+    width: 125px;
+    height: auto;
+    margin: auto;
+}
+.solucionesDetalle
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    font-size: 14px;
+    overflow: auto;
+    display: none;
+    
+}
+.itemServicios
+{
+    perspective: 500px;
+    overflow: hidden;
+    
+}
+
+.itemServiciosActive .solucionesDetalle
+{
+    display: block;
+    animation: animacionEntradaSolucionDetalle .5s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s 1 normal forwards;
+}
+
+@keyframes animacionEntradaSolucionDetalle{
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+        transform-style: preserve-3d;
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        transform-style: preserve-3d;
+    }
+}
+.itemServiciosSalida .solucionesDetalle
+{
+    display: block;
+    animation: animacionEntradaSolucionDetalleSalida .5s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s 1 normal forwards;
+}
+@keyframes animacionEntradaSolucionDetalleSalida{
+    100% {
+        opacity: 0;
+        transform: rotateY(-90deg);
+        transform-style: preserve-3d;
+    }
+}
+/* SOLUCIONES */
 
