@@ -267,34 +267,8 @@
     <link rel="stylesheet" href="assets/lib/swiper-7.3.1/css/swiper-bundle.min.css">
     <script src="assets/lib/swiper-7.3.1/js/swiper-bundle.min.js"></script>
 
-
-    <script>
-        function showDetalleItemServicios(obj)
-        {
-           if(obj.classList.contains('itemServiciosActive'))
-           {
-                obj.classList.remove("itemServiciosActive");
-                obj.classList.add("itemServiciosSalida");
-                /* END ANIMATION */
-                obj.addEventListener("webkitAnimationEnd", function(){
-                    obj.classList.remove("itemServiciosSalida");
-                });
-                obj.addEventListener("animationend", function(){
-                    obj.classList.remove("itemServiciosSalida");
-                });
-                /* END ANIMATION */
-           }
-           else
-           {
-               obj.classList.add("itemServiciosActive");
-           }
-           
-        }
-    </script>
- 
-   
-
     <script src="assets/commom/js/main.js"></script>
+    <script src="assets/commom/js/soluciones.js"></script>
 </body>
 
 </html>

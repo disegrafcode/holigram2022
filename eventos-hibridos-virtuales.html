@@ -53,19 +53,19 @@
                     aria-label="Close" id="close" onclick="document.getElementById('toggleH14').click()"></button>
                 <ul class="navbar-nav ms-auto flex-nowrap">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link m-2 menu-item nav-active" draggable="false">Nosotros</a>
+                        <a href="index.html" class="nav-link m-2 menu-item" draggable="false">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a href="servicios.html" class="nav-link m-2 menu-item" draggable="false">Servicios</a>
+                        <a href="servicios.html" class="nav-link m-2 menu-item nav-active" draggable="false">Servicios</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link m-2 menu-item" draggable="false">Portafolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link m-2 menu-item" draggable="false">Soluciones</a>
+                        <a href="soluciones.html" class="nav-link m-2 menu-item" draggable="false">Soluciones</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link m-2 menu-item" draggable="false">Contáctanos</a>
+                        <a href="contacto.html" class="nav-link m-2 menu-item" draggable="false">Contáctanos</a>
                     </li>
                 </ul>
             </div>
@@ -73,8 +73,16 @@
     </nav>
 
     <section id="hero">
-        <div class="d-flex min-vh-100" lc-helper="background"
-            style="background:url(assets/commom/img/banner-activacion-ferias.jpg)  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
+        <div class="mainSlider">
+            <div class="swiper mainSlider" id="mainSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image: url(assets/commom/img/banner-activacion-btl.jpg);"></div>
+                  <div class="swiper-slide" style="background-image: url(assets/commom/img/banner-activacion-eventos.jpg);"></div>
+                  <div class="swiper-slide" style="background-image: url(assets/commom/img/banner-activacion-ferias.jpg);"></div>
+                </div>
+              </div>
+        </div>
+        <div class="d-flex min-vh-100 position-relative" style="z-index: 100;">
             <div class="align-self-center text-center text-light col-md-8 offset-md-2">
                 <div class="lc-block mb-4">
                     <div editable="rich">
@@ -521,69 +529,33 @@
         </div>
     </footer>
 
+    <!-- Modal VIDEO -->
+    <div class="modal fade" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true" id="videoModal">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div id="videoIframe" class="ratio ratio-16x9">
+
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
     <script src="assets/lib/bootstrap-5.1.3/js/bootstrap.bundle.js"></script>
 
     <!-- SWIPER SLIDER -->
     <link rel="stylesheet" href="assets/lib/swiper-7.3.1/css/swiper-bundle.min.css">
     <script src="assets/lib/swiper-7.3.1/js/swiper-bundle.min.js"></script>
 
-    <script>
-        var swiper = new Swiper("#sliderNosotros", {
-            slidesPerView: "auto",
-            spaceBetween: 30,
-            centeredSlides: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-
-        var swiper2 = new Swiper("#slider2", {
-            slidesPerView: "auto",
-            spaceBetween: 0,
-            centeredSlides: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                1024: {
-                    centeredSlides: true,
-                },            
-                992: {
-                    centeredSlides: true,
-                },
-                0: {
-                    centeredSlides: false,
-                },
-            },
-        });
-
-        swiper2.on('slideChange', function () {
-            clearAllSlidersSwiper2();
-            showActiveSliderSwiper2();
-        });
-
-        function clearAllSlidersSwiper2() {
-            for (let i = 0; i < swiper2.slides.length; i++) {
-                swiper2.slides[i].classList.remove("swiper2Active");
-            }
-        }
-
-        function showActiveSliderSwiper2()
-        {
-            let numSlide = swiper2.activeIndex;
-            let currentSlide = swiper2.slides[numSlide];
-            currentSlide.classList.add("swiper2Active");
-        }
-        showActiveSliderSwiper2();
-    </script>
-
     <script src="assets/commom/js/main.js"></script>
+    <script src="assets/commom/js/eventos.js"></script>
 
     <!-- VERTICAL ACCORDEON -->
     <link rel="stylesheet" href="assets/lib/verticalAccordeon/css/verticalAccodeon.css">
     <script src="assets/lib/verticalAccordeon/js/verticalAccordeon.js"></script>
+    <script src="assets/commom/js/servicios.js"></script>
     <!-- VERTICAL ACCORDEON -->
 
 

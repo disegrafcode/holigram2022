@@ -50,9 +50,20 @@ function exitActiveItem(obj)
 
 function restarAllItems()
 {
+    exitActiveItem(objAnterior);
+    objAnterior.classList.remove("itemAccordeonInactive");    
     closing = true;
-    let parent = document.getElementById("accordeon1");
+
+    setTimeout(function () {
+        closing = false;
+        addClassInactiveItems();
+        objAnterior = undefined;
+    }, 800);
+
+    /*let parent = document.getElementById("accordeon1");
     let items = parent.querySelectorAll(".itemAccordeon");
+    
+    
     for(let i=0; i<items.length;i++)
     {
         items[i].classList.remove("activeItemAcordeon");
@@ -63,6 +74,6 @@ function restarAllItems()
 
     setTimeout(function () {
         closing = false;
-    }, 1000);
+    }, 1000);*/
 }
 

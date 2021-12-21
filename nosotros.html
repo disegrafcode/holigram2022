@@ -73,8 +73,16 @@
     </nav>
 
     <section id="hero">
-        <div class="d-flex min-vh-100" lc-helper="background"
-            style="background:url(assets/commom/img/banner-activacion-ferias.jpg)  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
+        <div class="mainSlider">
+            <div class="swiper mainSlider" id="mainSlider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image: url(assets/commom/img/banner-activacion-btl.jpg);"></div>
+                  <div class="swiper-slide" style="background-image: url(assets/commom/img/banner-activacion-eventos.jpg);"></div>
+                  <div class="swiper-slide" style="background-image: url(assets/commom/img/banner-activacion-ferias.jpg);"></div>
+                </div>
+              </div>
+        </div>
+        <div class="d-flex min-vh-100 position-relative" style="z-index: 100;">
             <div class="align-self-center text-center text-light col-md-8 offset-md-2">
                 <div class="lc-block mb-4">
                     <div editable="rich">
@@ -82,9 +90,8 @@
                         <p class="lead mx-md-5 mx-2">
                             Holigram es una agencia de experiencias de marca . Te invitamos a que conozcas nuestra historia
                             , lo que nos diferencia y a nuestro equipo.
-    
                         </p>
-                        <button class="btn btn-light text-primary fw-bold mt-3"> Video Reel 2022 </button>
+                        <button class="btn btn-light text-primary fw-bold mt-3" data-bs-toggle="modal" data-bs-target="#videoModal"> Video Reel 2022 </button>
                     </div>
                 </div>
                 <span class="scroll-down"><img src="assets/commom/img/arrow-down.svg" class="translate-middle"
@@ -435,6 +442,20 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal VIDEO -->
+    <div class="modal fade" tabindex="-1" aria-labelledby="videoModal" aria-hidden="true" id="videoModal">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <div id="videoIframe" class="ratio ratio-16x9">
+
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
     
     <script src="assets/lib/bootstrap-5.1.3/js/bootstrap.bundle.js"></script>
 
@@ -442,19 +463,8 @@
     <link rel="stylesheet" href="assets/lib/swiper-7.3.1/css/swiper-bundle.min.css">
     <script src="assets/lib/swiper-7.3.1/js/swiper-bundle.min.js"></script>
 
-    <script>
-        var swiper = new Swiper("#sliderNosotros", {
-          slidesPerView: "auto",
-          spaceBetween: 30,
-          centeredSlides: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-      </script>
-
     <script src="assets/commom/js/main.js"></script>
+    <script src="assets/commom/js/nosotros.js"></script>
 </body>
 
 </html>
