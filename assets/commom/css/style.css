@@ -150,7 +150,7 @@
     font-size: 14px;
 }
 
-.navbarCustomDark .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
+idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     display: block;
 }
 
@@ -164,6 +164,18 @@
 
 .navbarCustomLight .logoLightVersion, .navbarCustomLight .iconLightVersion {
     display: block;
+}
+.navbarCustomDark .idioma
+{
+    /*display: none;*/
+    background-color: black;
+    color: white !important;
+}
+
+.navbarCustomLight .idioma
+{
+    background-color: #f0f0f0;
+    border-color: rgb(0,0,0, .25);
 }
 
 /* PAGINA PRINCIPAL */
