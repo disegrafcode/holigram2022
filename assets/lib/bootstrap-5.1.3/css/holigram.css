@@ -55,7 +55,7 @@
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: #F0F0F0;
+  --bs-light: #f7f7f7;
   --bs-dark: #01050E;
   --bs-primary-rgb: 3,58,85;
   --bs-secondary-rgb: 60,178,231;
@@ -63,7 +63,7 @@
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 240, 240, 240;
+  --bs-light-rgb: 247, 247, 247;
   --bs-dark-rgb: 1, 5, 14;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
@@ -131,7 +131,7 @@
   --bs-border-color-cards-rgba: 0, 0, 255, .1;
   --bs-header-bg-color-cards-rgba: 0,0,255,.025;
   --bs-header-color-cards: 0,0,0,.6;  
-  --bs-shadow-cards-rgba: 0px 0px 50px rgba(0,0,255,.09);
+  --bs-shadow-cards-rgba: 0px 0px 50px rgba(255,255,255,.09);
   /* FOR CARDS */
   
   /* ACCORDIONS */
@@ -161,11 +161,14 @@
   /* FOR TOASTS*/
   
   /* SHADOWS COLORS */
-  --bs-shadow: 0 0.5rem 1rem rgba(0,0,255,0.15);
-  --bs-shadow-sm: 0 0.125rem .25rem rgba(0,0,255,0.08);
-  --bs-shadow-lg: 0 1rem 3rem rgba(0,0,255,0.18);
-  /* SHADOWS COLORS */
-  
+  --bs-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+  --bs-shadow-sm: 0 0.125rem .25rem rgba(0,0,0,0.08);
+  --bs-shadow-lg: 0 1rem 3rem rgba(0,0,0,0.18);
+  /* SHADOWS COLORS */  
+}
+.bg-holigramGray
+{
+    background-color: #f3f3ee !important;
 }
 a{
     color: rgb(var(--bs-primary-rgb));

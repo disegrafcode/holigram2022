@@ -1,4 +1,4 @@
-var swiper = new Swiper("#sliderNosotros", {
+var swiper1 = new Swiper("#sliderNosotros", {
     slidesPerView: "auto",
     spaceBetween: 30,
     centeredSlides: true,
@@ -7,6 +7,11 @@ var swiper = new Swiper("#sliderNosotros", {
         clickable: true,
     },
 });
+
+function nextSliderNosotros()
+{
+    swiper1.slideNext();
+}
 
 var swiper = new Swiper("#mainSlider", {
     centeredSlides: true,

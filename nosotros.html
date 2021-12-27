@@ -94,20 +94,39 @@
                         <button class="btn btn-light text-primary fw-bold mt-3" data-bs-toggle="modal" data-bs-target="#videoModal"> Video Reel 2022 </button>
                     </div>
                 </div>
-                <span class="scroll-down"><img src="assets/commom/img/arrow-down.svg" class="translate-middle"
-                        alt="arrow-down" width="50" height="50"></span>
+                <a href="#section1">
+                    <span class="scroll-down">
+                        <img src="assets/commom/img/arrow-down.svg" class="translate-middle"
+                            alt="arrow-down" width="50" height="50">
+                    </span>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="py-5">
+    <section class="py-5 bg-holigramGray" id="section1">
+        <div class="container">
+            <div class="row">
+                <ul class="nav justify-content-center fs-6 my-5 position-sticky">
+                    <li class="nav-item">
+                      <a class="nav-link nav-active" href="#">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#diferencial">Nuestro diferencial</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#equipo">Equipo</a>
+                    </li>                   
+                  </ul>
+            </div>
+        </div>
         <div class="swiper" id="sliderNosotros">
             <div class="swiper-wrapper">
               <div class="swiper-slide itemNosotros">
                 <div class="card bg-transparent shadow-none border-0" style="max-width:1400px">
                     <div class="container-fluid">
                         <div class="row no-gutters">
-                            <div class="col-xl-7 shadow p-0" style="min-height: 600px;">
+                            <div class="col-xl-7 shadow p-0 itemNosotrosInside">
                                 <div class="card-block p-5 text-primary me-xl-5 me-0">
                                     <h5 class="text-muted mb-4 mt-xl-5 mt-5">NUESTRO ENFOQUE</h5>
                                     <h3 class="card-title mb-3">Experiencias memorables + relaciones profundas</h3>
@@ -119,13 +138,14 @@
                                         conviertan en defensores de la marca, ya que como resultado creamos una relación profunda y duradera entre nosotros,
                                         la marca y su audiencia.
                                     </p>
+                                    <a href="javascript:void(0)" onclick="nextSliderNosotros()">
+                                        <i class="fas fa-arrow-right mt-md-5 mt-3 small"></i>
+                                    </a>
                                 </div>
                             </div>
             
                             <div class="col-xl-5 p-0 d-xl-block d-none position-relative">
-                                <div class="w-100 bg-light"
-                                    style="height: 90%; margin-top: 5%; background-image: url(assets/commom/img/n1.jpg); background-position: center;background-size: cover;">
-                                </div>
+                                <div class="w-100 bg-light itemNosotrosImagen" style="background-image: url(assets/commom/img/n1.jpg);"></div>
                             </div>
             
                             <div class="col-xl-5 p-0 d-xl-none d-block w-100 bg-light" style="height: 300px; background-image: url(assets/commom/img/n1.jpg); background-position: center;background-size: cover;">
@@ -141,7 +161,7 @@
                 <div class="card bg-transparent shadow-none border-0" style="max-width:1400px">
                     <div class="container-fluid">
                         <div class="row no-gutters">
-                            <div class="col-xl-7 shadow p-0" style="min-height: 600px;">
+                            <div class="col-xl-7 shadow p-0 itemNosotrosInside">
                                 <div class="card-block p-5 text-primary me-xl-5 me-0">
                                     <h5 class="text-muted mb-4 mt-xl-5 mt-5">NUESTRA HISTORIA</h5>
                                     <h3 class="card-title mb-3">Experiencias + Vanguardia </h3>
@@ -152,12 +172,15 @@
                                         diseñadores, programadores y ejecutivos con más de 16 años de experiencia.
                                         Hemos trabajado a nivel nacional y también en el extranjero.                                    
                                     </p>
+                                    <a href="javascript:void(0)" onclick="nextSliderNosotros()">
+                                        <i class="fas fa-arrow-right mt-md-5 mt-3 small"></i>
+                                    </a>
                                 </div>
                             </div>
             
                             <div class="col-xl-5 p-0 d-xl-block d-none position-relative">
-                                <div class="w-100 bg-light"
-                                    style="height: 90%; margin-top: 5%; background-image: url(assets/commom/img/n2.jpg); background-position: center;background-size: cover;">
+                                <div class="w-100 bg-light itemNosotrosImagen"
+                                    style="background-image: url(assets/commom/img/n2.jpg);">
                                 </div>
                             </div>
             
@@ -172,9 +195,9 @@
 
               <div class="swiper-slide itemNosotros">
                 <div class="card bg-transparent shadow-none border-0" style="max-width:1400px">
-                    <div class="container-fluid">
+                    <div class="container-fluid">                        
                         <div class="row no-gutters">
-                            <div class="col-xl-7 shadow p-0" style="min-height: 600px;">
+                            <div class="col-xl-7 shadow p-0 itemNosotrosInside">
                                 <div class="card-block p-5 text-primary me-xl-5 me-0">
                                     <h5 class="text-muted mb-4 mt-xl-5 mt-5">NUESTROS VALORES - CULTURA</h5>
                                     <h3 class="card-title mb-3">Creatividad + Pasión </h3>
@@ -182,12 +205,15 @@
                                         Nuestro valores fundamentales son el compromiso, creatividad y pasión. Los cuales han sido
                                         nuestra base desde el primer día en todos los proyectos.
                                     </p>
+                                    <a href="javascript:void(0)" onclick="nextSliderNosotros()">
+                                        <i class="fas fa-arrow-right mt-md-5 mt-3 small"></i>
+                                    </a>
                                 </div>
                             </div>
             
                             <div class="col-xl-5 p-0 d-xl-block d-none position-relative">
-                                <div class="w-100 bg-light"
-                                    style="height: 90%; margin-top: 5%; background-image: url(assets/commom/img/n3.jpg); background-position: center;background-size: cover;">
+                                <div class="w-100 bg-light itemNosotrosImagen"
+                                    style="background-image: url(assets/commom/img/n3.jpg);">
                                 </div>
                             </div>
             
@@ -205,7 +231,7 @@
           </div>        
     </section>
 
-    <section class="py-5 bg-primary" style="background-image: url(assets/commom/img/bg-nosotros.jpg); background-position: center;background-size: cover;">
+    <section class="py-5 bg-primary" style="background-image: url(assets/commom/img/bg-nosotros.jpg); background-position: center;background-size: cover;" id="diferencial">
         <div class="container">
             <div class="row text-center text-white my-5">
                 <div class="row">
@@ -274,10 +300,10 @@
         </div>
     </section>
 
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-light" id="equipo">
         <div class="container text-primary">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 mt-5">
                     <h2 class="text-center text-primary">SOÑADORES + HACEDORES</h2>
                 </div>
                 <div class="offset-md-3 col-md-6 text-center">
