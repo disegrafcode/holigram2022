@@ -430,10 +430,39 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     width: calc(19.5% - 10px);
 }
 
-.listTeamNosotros>li:nth-child(9n) {
-    color: lime;
-  }
-
+.listTeamNosotros>li:nth-child(1) {
+    width: 20%;
+    padding-left: 0.65%;
+    padding-right: 0.65%;
+}
+.listTeamNosotros>li:nth-child(15n) {
+    width: 20%;
+    padding-left: 0.65%;
+    padding-right: 0.65%;
+}
+.listTeamNosotrosActive
+{
+    height: 850px;
+    position: initial;
+}
+.infoTeamNosotros
+{
+    width: 100%;
+    max-width: 800px;
+    
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: auto;
+    margin-top: 30px;
+    padding: 25px;
+    font-size: 14px;
+    transform: translateX(-50%)
+}
+.listTeamNosotrosActive .infoTeamNosotros
+{
+    display: block;
+}
 
 @media only screen and (max-width:991px) {
     .queNosDiferencia .col-lg-3 {
