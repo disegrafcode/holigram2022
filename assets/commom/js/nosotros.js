@@ -41,3 +41,43 @@ videoModal.addEventListener('show.bs.modal', function (event) {
 videoModal.addEventListener('hidden.bs.modal', function (event) {
     deleteVideo()
 })
+
+let currentActiveItem;
+function showItemTeamNosotros(obj)
+{
+    if(obj.classList.contains("listTeamNosotrosActive"))
+    {
+        hideItemTeamNosotros(obj);        
+    }
+    else
+    {
+        clearItemTeamNosotros();
+        obj.classList.add("listTeamNosotrosActive");
+        currentActiveItem = obj;
+    }
+}
+
+function hideItemTeamNosotros(obj)
+{
+    obj.classList.remove("listTeamNosotrosActive");
+    obj.classList.add("listTeamNosotrosExit");
+    /* END ANIMATION */
+    obj.addEventListener("webkitAnimationEnd", function(){
+        obj.classList.remove("listTeamNosotrosExit");
+    });
+    obj.addEventListener("animationend", function(){
+        obj.classList.remove("listTeamNosotrosExit");
+    });
+    /* END ANIMATION */
+}
+
+function clearItemTeamNosotros()
+{
+    let parent = document.getElementById("listTeamNosotros");
+    let items = parent.querySelectorAll("li");
+    for(let i=0; i<items.length;i++)
+    {
+        items[i].classList.remove("listTeamNosotrosExit");
+        items[i].classList.remove("listTeamNosotrosActive");
+    }
+}
