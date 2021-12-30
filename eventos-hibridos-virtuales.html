@@ -62,10 +62,26 @@
                         <a href="#" class="nav-link m-2 menu-item" draggable="false">Portafolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="soluciones.html" class="nav-link m-2 menu-item" draggable="false">Soluciones</a>
+                        <!-- <a href="soluciones.html" class="nav-link m-2 menu-item" draggable="false">Soluciones</a> -->
+                        <div class="dropdown">
+                            <a href="javascript:void(0)" class="nav-link m-2 menu-item dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Soluciones
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">Servicio 1 </a></li>
+                              <li><a class="dropdown-item" href="#">Servicio 2 </a></li>
+                              <li><a class="dropdown-item" href="#">Servicio 3 </a></li>
+                            </ul>
+                          </div>
                     </li>
                     <li class="nav-item">
                         <a href="contacto.html" class="nav-link m-2 menu-item" draggable="false">Contáctanos</a>
+                    </li>
+                    <li>
+                        <select class="nav-link m-2 menu-item text-primary small idioma">
+                            <option selected value="0">Español</option>
+                            <option value="1">Inglés</option>                           
+                        </select>
                     </li>
                 </ul>
             </div>
@@ -95,131 +111,130 @@
                         </p>
                     </div>
                 </div>
-                <span class="scroll-down"><img src="assets/commom/img/arrow-down.svg" class="translate-middle"
-                        alt="arrow-down" width="50" height="50"></span>
+                <a href="#section1">
+                    <span class="scroll-down">
+                        <img src="assets/commom/img/arrow-down.svg" class="translate-middle"
+                            alt="arrow-down" width="50" height="50">
+                    </span>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="py-5 bg-light">
-        <h2 class="text-black-50 mb-4" style="margin-left: 20%;">Nuestro proceso – evento virtual</h2>
+    <section class="py-5 bg-holigramGray" id="section1">
+        <h2 class="text-black-50 mb-4 mt-3" style="margin-left: 20%;">Nuestro proceso – evento virtual</h2>
         <div class="swiper" id="sliderNosotros">
             <div class="swiper-wrapper">
-                <div class="swiper-slide itemNosotros">
-                    <div class="card bg-transparent shadow-none border-0" style="max-width:1400px">
-                        <div class="container-fluid">
-                            <div class="row no-gutters">
-                                <div class="col-xl-7 shadow p-0 bg-white" style="min-height: 600px;">
-                                    <div class="card-block p-5 text-primary me-xl-5 me-0">
-                                        <h5 class="text-muted mb-4 mt-xl-5 mt-5">NUESTRO ENFOQUE</h5>
-                                        <h3 class="card-title mb-3">Experiencias memorables + relaciones profundas</h3>
-                                        <p class="card-text">
-                                            Cuando trabajamos con las marcas sabemos que cada una tiene una necesidad y
-                                            una historia
-                                            diferente que contar. Por eso creemos que cada gran proyecto debe ser a
-                                            medida, ya que cada experiencia humana es
-                                            diferente y necesita una voz distintas.
-                                            Creamos experiencias memorables en vivo y virtuales, de esa forma es como
-                                            logramos realmente que los cliente se
-                                            conviertan en defensores de la marca, ya que como resultado creamos una
-                                            relación profunda y duradera entre nosotros,
-                                            la marca y su audiencia.
-                                        </p>
-                                    </div>
+              <div class="swiper-slide itemNosotros">
+                <div class="card bg-transparent shadow-none border-0" style="max-width:1400px">
+                    <div class="container-fluid">
+                        <div class="row no-gutters">
+                            <div class="col-xl-6 shadow p-0 itemNosotrosInside">
+                                <div class="card-block p-5 text-primary me-xl-5 me-0">
+                                    <h5 class="text-muted mb-4 mt-xl-5 mt-5">NUESTRO ENFOQUE</h5>
+                                    <h3 class="card-title mb-3">Experiencias memorables + relaciones profundas</h3>
+                                    <p class="card-text">
+                                        Cuando trabajamos con las marcas sabemos que cada una tiene una necesidad y una historia
+                                        diferente que contar. Por eso creemos que cada gran proyecto debe ser a medida, ya que cada experiencia humana es
+                                        diferente y necesita una voz distintas.                                    
+                                        Creamos experiencias memorables en vivo y virtuales, de esa forma es como logramos realmente que los cliente se
+                                        conviertan en defensores de la marca, ya que como resultado creamos una relación profunda y duradera entre nosotros,
+                                        la marca y su audiencia.
+                                    </p>
+                                    <a href="javascript:void(0)" onclick="nextSliderNosotros()">
+                                        <i class="fas fa-arrow-right mt-md-5 mt-3 small"></i>
+                                    </a>
                                 </div>
-
-                                <div class="col-xl-5 p-0 d-xl-block d-none position-relative">
-                                    <div class="w-100 bg-light"
-                                        style="height: 90%; margin-top: 5%; background-image: url(assets/commom/img/n1.jpg); background-position: center;background-size: cover;">
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-5 p-0 d-xl-none d-block w-100 bg-light"
-                                    style="height: 300px; background-image: url(assets/commom/img/n1.jpg); background-position: center;background-size: cover;">
-                                </div>
-
                             </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="swiper-slide itemNosotros">
-                    <div class="card bg-transparent shadow-none border-0" style="max-width:1400px">
-                        <div class="container-fluid">
-                            <div class="row no-gutters">
-                                <div class="col-xl-7 shadow p-0 bg-white" style="min-height: 600px;">
-                                    <div class="card-block p-5 text-primary me-xl-5 me-0">
-                                        <h5 class="text-muted mb-4 mt-xl-5 mt-5">NUESTRA HISTORIA</h5>
-                                        <h3 class="card-title mb-3">Experiencias + Vanguardia </h3>
-                                        <p class="card-text">En el 2003 Juan pablo Leon fundador de holigram fue uno de
-                                            los pioneros en el inicio del 3D
-                                            arquitectónico en Perú. Siempre investigando e innovando, en uno de sus
-                                            viajes trajo equipos holográficos, de ahí el
-                                            nombre Holigram, empezamos creando contenidos, luego también fabricando
-                                            equipos y actualmente somos una agencia de
-                                            servicio completo, vanguardista y en crecimiento. Formada por un grupo de
-                                            colaboradores, entre ellos creativos,
-                                            diseñadores, programadores y ejecutivos con más de 16 años de experiencia.
-                                            Hemos trabajado a nivel nacional y también en el extranjero.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-5 p-0 d-xl-block d-none position-relative">
-                                    <div class="w-100 bg-light"
-                                        style="height: 90%; margin-top: 5%; background-image: url(assets/commom/img/n2.jpg); background-position: center;background-size: cover;">
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-5 p-0 d-xl-none d-block w-100 bg-light"
-                                    style="height: 300px; background-image: url(assets/commom/img/n2.jpg); background-position: center;background-size: cover;">
-                                </div>
-
+            
+                            <div class="col-xl-6 p-0 d-xl-block d-none position-relative">
+                                <div class="w-100 bg-light itemNosotrosImagen" style="background-image: url(assets/commom/img/n1.jpg);"></div>
                             </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="swiper-slide itemNosotros">
-                    <div class="card bg-transparent shadow-none border-0" style="max-width:1400px">
-                        <div class="container-fluid">
-                            <div class="row no-gutters">
-                                <div class="col-xl-7 shadow p-0 bg-white" style="min-height: 600px;">
-                                    <div class="card-block p-5 text-primary me-xl-5 me-0">
-                                        <h5 class="text-muted mb-4 mt-xl-5 mt-5">NUESTROS VALORES - CULTURA</h5>
-                                        <h3 class="card-title mb-3">Creatividad + Pasión </h3>
-                                        <p class="card-text">
-                                            Nuestro valores fundamentales son el compromiso, creatividad y pasión. Los
-                                            cuales han sido
-                                            nuestra base desde el primer día en todos los proyectos.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-5 p-0 d-xl-block d-none position-relative">
-                                    <div class="w-100 bg-light"
-                                        style="height: 90%; margin-top: 5%; background-image: url(assets/commom/img/n3.jpg); background-position: center;background-size: cover;">
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-5 p-0 d-xl-none d-block w-100 bg-light"
-                                    style="height: 300px; background-image: url(assets/commom/img/n3.jpg); background-position: center;background-size: cover;">
-                                </div>
-
+            
+                            <div class="col-xl-5 p-0 d-xl-none d-block w-100 bg-light" style="height: 300px; background-image: url(assets/commom/img/n1.jpg); background-position: center;background-size: cover;">
                             </div>
+            
                         </div>
-
                     </div>
+            
                 </div>
+              </div>
 
+              <div class="swiper-slide itemNosotros">
+                <div class="card bg-transparent shadow-none border-0" style="max-width:1400px">
+                    <div class="container-fluid">
+                        <div class="row no-gutters">
+                            <div class="col-xl-6 shadow p-0 itemNosotrosInside">
+                                <div class="card-block p-5 text-primary me-xl-5 me-0">
+                                    <h5 class="text-muted mb-4 mt-xl-5 mt-5">NUESTRA HISTORIA</h5>
+                                    <h3 class="card-title mb-3">Experiencias + Vanguardia </h3>
+                                    <p class="card-text">En el 2003 Juan pablo Leon fundador de holigram fue uno de los pioneros en el inicio del 3D
+                                        arquitectónico en Perú. Siempre investigando e innovando, en uno de sus viajes trajo equipos holográficos, de ahí el
+                                        nombre Holigram, empezamos creando contenidos, luego también fabricando equipos y actualmente somos una agencia de
+                                        servicio completo, vanguardista y en crecimiento. Formada por un grupo de colaboradores, entre ellos creativos,
+                                        diseñadores, programadores y ejecutivos con más de 16 años de experiencia.
+                                        Hemos trabajado a nivel nacional y también en el extranjero.                                    
+                                    </p>
+                                    <a href="javascript:void(0)" onclick="nextSliderNosotros()">
+                                        <i class="fas fa-arrow-right mt-md-5 mt-3 small"></i>
+                                    </a>
+                                </div>
+                            </div>
+            
+                            <div class="col-xl-6 p-0 d-xl-block d-none position-relative">
+                                <div class="w-100 bg-light itemNosotrosImagen"
+                                    style="background-image: url(assets/commom/img/n2.jpg);">
+                                </div>
+                            </div>
+            
+                            <div class="col-xl-5 p-0 d-xl-none d-block w-100 bg-light" style="height: 300px; background-image: url(assets/commom/img/n2.jpg); background-position: center;background-size: cover;">
+                            </div>
+            
+                        </div>
+                    </div>
+            
+                </div>
+              </div>
+
+              <div class="swiper-slide itemNosotros">
+                <div class="card bg-transparent shadow-none border-0" style="max-width:1400px">
+                    <div class="container-fluid">                        
+                        <div class="row no-gutters">
+                            <div class="col-xl-6 shadow p-0 itemNosotrosInside">
+                                <div class="card-block p-5 text-primary me-xl-5 me-0">
+                                    <h5 class="text-muted mb-4 mt-xl-5 mt-5">NUESTROS VALORES - CULTURA</h5>
+                                    <h3 class="card-title mb-3">Creatividad + Pasión </h3>
+                                    <p class="card-text">
+                                        Nuestro valores fundamentales son el compromiso, creatividad y pasión. Los cuales han sido
+                                        nuestra base desde el primer día en todos los proyectos.
+                                    </p>
+                                    <a href="javascript:void(0)" onclick="nextSliderNosotros()">
+                                        <i class="fas fa-arrow-right mt-md-5 mt-3 small"></i>
+                                    </a>
+                                </div>
+                            </div>
+            
+                            <div class="col-xl-6 p-0 d-xl-block d-none position-relative">
+                                <div class="w-100 bg-light itemNosotrosImagen"
+                                    style="background-image: url(assets/commom/img/n3.jpg);">
+                                </div>
+                            </div>
+            
+                            <div class="col-xl-5 p-0 d-xl-none d-block w-100 bg-light" style="height: 300px; background-image: url(assets/commom/img/n3.jpg); background-position: center;background-size: cover;">
+                            </div>
+            
+                        </div>
+                    </div>
+            
+                </div>
+              </div>              
+              
             </div>
             <div class="swiper-pagination d-block position-relative pt-5"></div>
-        </div>
+          </div>
     </section>
 
-    <section class="w-100 overflow-hidden py-5">
+    <section class="w-100 overflow-hidden pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -355,11 +370,11 @@
         </div>
     </section>
 
-    <section class="py-5 position-relative">
+    <section class="py-5 position-relative bg-holigramGray">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="text-muted">EXPERIENCIAS DE EVENTOS</h2>
+                    <h2 class="text-muted mt-5">EXPERIENCIAS DE EVENTOS</h2>
                 </div>
             </div>
         </div>
@@ -376,7 +391,7 @@
                                 while having valuable one-on-one interactions with distributors.
                             </p>
                         </div>
-                        <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                        <img src="https://i.imgur.com/UtBxYGy.jpg" alt="image" class="img-fluid">
                     </div>
                     <div class="swiper-slide">
                         <div class="textInfoSlider2">
@@ -387,7 +402,7 @@
                                 while having valuable one-on-one interactions with distributors.
                             </p>
                         </div>
-                        <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                        <img src="https://i.imgur.com/UtBxYGy.jpg" alt="image" class="img-fluid">
                     </div>
                     <div class="swiper-slide">
                         <div class="textInfoSlider2">
@@ -398,7 +413,7 @@
                                 while having valuable one-on-one interactions with distributors.
                             </p>
                         </div>
-                        <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                        <img src="https://i.imgur.com/UtBxYGy.jpg" alt="image" class="img-fluid">
                     </div>
                     <div class="swiper-slide">
                         <div class="textInfoSlider2">
@@ -409,7 +424,7 @@
                                 while having valuable one-on-one interactions with distributors.
                             </p>
                         </div>
-                        <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                        <img src="https://i.imgur.com/UtBxYGy.jpg" alt="image" class="img-fluid">
                     </div>
                     <div class="swiper-slide">
                         <div class="textInfoSlider2">
@@ -420,7 +435,7 @@
                                 while having valuable one-on-one interactions with distributors.
                             </p>
                         </div>
-                        <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                        <img src="https://i.imgur.com/UtBxYGy.jpg" alt="image" class="img-fluid">
                     </div>
                     <div class="swiper-slide">
                         <div class="textInfoSlider2">
@@ -431,7 +446,7 @@
                                 while having valuable one-on-one interactions with distributors.
                             </p>
                         </div>
-                        <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                        <img src="https://i.imgur.com/UtBxYGy.jpg" alt="image" class="img-fluid">
                     </div>
                     <div class="swiper-slide">
                         <div class="textInfoSlider2">
@@ -442,7 +457,7 @@
                                 while having valuable one-on-one interactions with distributors.
                             </p>
                         </div>
-                        <img src="https://i.imgur.com/ZTZ8fGS.jpg" alt="image" class="img-fluid">
+                        <img src="https://i.imgur.com/UtBxYGy.jpg" alt="image" class="img-fluid">
                     </div>
                 </div>
                 <div class="swiper-pagination position-relative mt-4"></div>
@@ -556,6 +571,7 @@
     <link rel="stylesheet" href="assets/lib/verticalAccordeon/css/verticalAccodeon.css">
     <script src="assets/lib/verticalAccordeon/js/verticalAccordeon.js"></script>
     <script src="assets/commom/js/servicios.js"></script>
+    
     <!-- VERTICAL ACCORDEON -->
 
 

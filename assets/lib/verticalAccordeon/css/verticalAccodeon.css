@@ -1,7 +1,7 @@
 .verticalAccordeon {
     width: 100%;
     position: relative;
-    min-height: 800px;
+    min-height: 700px;
 
     /* FLEXBOX */
     display: -ms-flexbox;
@@ -51,7 +51,12 @@
     background-position: center;
     background-size: cover;
     
-
+    
+}
+.itemAccordeon:nth-child(2n)
+{
+    border-left: solid 1px rgb(110 110 110);
+    border-right: solid 1px rgb(110 110 110);
 }
 .verticalAccordeon .itemAccordeon::after
 {

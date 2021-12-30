@@ -603,7 +603,7 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
 /* EVENTOS DETALLE */
 
 #slider2 img {
-    padding-left: 190px;
+    padding-left: 120px;
 }
 
 #slider2 .swiper-slide {
@@ -620,8 +620,8 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     background-color: white;
     position: absolute;
     z-index: 22;
-    height: 60%;
-    max-height: 400px;
+    height: 70%;
+    max-height: 550px;
     left: 12%;
     top: 50%;
     transform: translateY(-50%);
@@ -629,6 +629,7 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     margin-left: -200px;
     overflow: auto;
     display: none;
+    font-size: 14px;
 }
 
 .swiper2Active .textInfoSlider2 {
