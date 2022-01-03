@@ -1,3 +1,7 @@
+:root {
+    --customHoligram_v1: #083a54;
+    --customHoligram_v2: #141b2b;
+}
 ::-webkit-input-placeholder { 
     color: white !important;
   }
@@ -30,11 +34,26 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
 }
 
+.customListBody16 li
+{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.customListBody16 li a
+{
+    color: var(--customHoligram_v2);
+}
+
+.customListBody16 li:hover
+{
+    font-weight: bold;
+}
+
 .customListBody16 li::before {
     content: "/";
     display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
     color: #45B4E2;
     font-weight: bold;
 }
@@ -121,17 +140,23 @@
 .itemGallery16Active p {
     margin-top: 5px;
     display: block !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: var(--customHoligram_v1);
 }
 
 .descriItemGallery16 h3 {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: var(--customHoligram_v2);
 }
 
 .descriItemGallery16 h3::after {
     content: "";
     width: 200px;
     height: 3px;
-    background-color: rgb(13 110 253);
+    background-color: var(--customHoligram_v1);
     display: block;
     padding: 0;
     margin-top: 5px;
