@@ -87,12 +87,17 @@ window.onscroll = function () { navStickyForServices() };
 let sectionStart = document.getElementById("hero");
 let offsetBottomMiniNav = sectionStart.offsetTop + sectionStart.offsetHeight;
 let customMiniNav = document.getElementById("miniNavBarNosotros");
+let arrayElementsMiniNavBar = document.getElementsByClassName("miniNavBarItem");
+
 
 function navStickyForServices() {
     if(customMiniNav==undefined)
     {
         return;
     }
+
+   
+    
     if (window.pageYOffset >= offsetBottomMiniNav) {
         customMiniNav.classList.add("animate__animated");
         customMiniNav.classList.add("animate__slideInDown");
