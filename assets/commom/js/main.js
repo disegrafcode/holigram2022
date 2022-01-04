@@ -5,6 +5,10 @@ let customNav = document.getElementById("customNav");
 
 
 function navSticky() {
+    if(customNav==undefined)
+    {
+        return;
+    }
     if (window.pageYOffset >= offsetBottom) {
         customNav.classList.add("position-fixed");
         customNav.classList.add("animate__animated");

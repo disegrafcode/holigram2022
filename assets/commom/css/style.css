@@ -156,7 +156,7 @@
     content: "";
     width: 200px;
     height: 3px;
-    background-color: var(--customHoligram_v1);
+    background-color: #45B4E2;
     display: block;
     padding: 0;
     margin-top: 5px;
@@ -561,6 +561,27 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     filter: grayscale(0%);
 
     border:solid 1px rgba(0, 0, 0, 0.25);
+}
+.miniNavBarNosotros
+{
+    /*margin-top: 50px;*/
+    margin-bottom: 50px;
+}
+.miniNavBarNosotros li
+{
+    font-size: 14px;
+}
+.miniNavBarActive
+{
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 2525;
+    background-color: rgb(247, 247, 247);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
 }
 
 @media only screen and (max-width:991px) {

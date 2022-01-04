@@ -81,3 +81,28 @@ function clearItemTeamNosotros()
         items[i].classList.remove("listTeamNosotrosActive");
     }
 }
+
+/* MINI NAVBAR */
+window.onscroll = function () { navStickyForServices() };
+let sectionStart = document.getElementById("hero");
+let offsetBottomMiniNav = sectionStart.offsetTop + sectionStart.offsetHeight;
+let customMiniNav = document.getElementById("miniNavBarNosotros");
+
+function navStickyForServices() {
+    if(customMiniNav==undefined)
+    {
+        return;
+    }
+    if (window.pageYOffset >= offsetBottomMiniNav) {
+        customMiniNav.classList.add("animate__animated");
+        customMiniNav.classList.add("animate__slideInDown");
+        customMiniNav.classList.add("miniNavBarActive");
+    }
+    else {
+        customMiniNav.classList.remove("miniNavBarActive");
+        customMiniNav.classList.remove("animate__animated");
+        customMiniNav.classList.remove("animate__slideInDown");
+      
+    }
+}
+/* MINI NAVBAR */

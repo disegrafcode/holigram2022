@@ -82,3 +82,4 @@ function clearItemTeamNosotros()
         items[i].classList.remove("listTeamNosotrosActive");
     }
 }
+
