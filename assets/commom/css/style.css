@@ -664,6 +664,7 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
 
 #slider2 img {
     padding-left: 120px;
+    cursor: pointer;
 }
 
 #slider2 .swiper-slide {

@@ -29,10 +29,16 @@ var swiper2 = new Swiper("#slider2", {
     },
 });
 
+
 swiper2.on('slideChange', function () {
     clearAllSlidersSwiper2();
     showActiveSliderSwiper2();
 });
+
+function nextSlider2()
+{
+    swiper2.slideNext();
+}
 
 function clearAllSlidersSwiper2() {
     for (let i = 0; i < swiper2.slides.length; i++) {
