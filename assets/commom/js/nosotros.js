@@ -88,6 +88,7 @@ let sectionStart = document.getElementById("hero");
 let offsetBottomMiniNav = sectionStart.offsetTop + sectionStart.offsetHeight;
 let customMiniNav = document.getElementById("miniNavBarNosotros");
 let arrayElementsMiniNavBar = document.getElementsByClassName("miniNavBarItem");
+let currentDivMiniNavBar = null;
 
 
 function navStickyForServices() {
@@ -96,7 +97,7 @@ function navStickyForServices() {
         return;
     }
 
-   
+    getCurrentDivMiniNavBar();
     
     if (window.pageYOffset >= offsetBottomMiniNav) {
         customMiniNav.classList.add("animate__animated");
@@ -109,5 +110,11 @@ function navStickyForServices() {
         customMiniNav.classList.remove("animate__slideInDown");
       
     }
+}
+
+function getCurrentDivMiniNavBar()
+{
+    console.log(arrayElementsMiniNavBar);
+    /*let tempArray = */
 }
 /* MINI NAVBAR */

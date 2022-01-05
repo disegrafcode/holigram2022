@@ -16,6 +16,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+           
+            #menuHover:hover .dropdown-menu {
+                display: block;
+                top: 100%;
+                left: 0;
+                margin-top: 0;               
+            }
+        </style>
     <title>Hello, world!</title>
 
 </head>
@@ -63,7 +72,7 @@
                     </li>
                     <li class="nav-item">
                         <!-- <a href="soluciones.html" class="nav-link m-2 menu-item" draggable="false">Soluciones</a> -->
-                        <div class="dropdown">
+                        <div class="dropdown" id="menuHover">
                             <a href="javascript:void(0)" class="nav-link m-2 menu-item dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 Soluciones
                             </a>
@@ -74,6 +83,7 @@
                             </ul>
                           </div>
                     </li>
+                    
                     <li class="nav-item">
                         <a href="contacto.html" class="nav-link m-2 menu-item" draggable="false">Contáctanos</a>
                     </li>

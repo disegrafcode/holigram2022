@@ -401,6 +401,7 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     margin-top: 5%;
     background-position: center;
     background-size: cover;
+    cursor: pointer;
 
 }
 .swiper-slide-active .itemNosotrosImagen
@@ -467,7 +468,7 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
 }
 .listTeamNosotrosActive, .listTeamNosotrosExit
 {
-    height: 880px;
+    height: 830px;
     position: initial;
 }
 .infoTeamNosotros
@@ -481,6 +482,7 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     top: auto;
     margin-top: 30px;
     padding: 25px;
+    padding-bottom: 0;
     font-size: 14px;
     transform: translateX(-50%)
 }
@@ -630,17 +632,29 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     overflow: hidden;
     display: block;
 }
-.itemPageServicios:active h6, .itemPageServicios:hover h6 {
+.itemPageServicios h6{
+    background-color: rgba(3,58,85,.8);
+    font-size: 18px;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.itemPageServicios img
+{
+    opacity: .5;
+}
+
+.itemPageServicios:active img, .itemPageServicios:hover img {
     animation: animacionHoverItemServicios 1s ease-out 0s 1 normal forwards;
 }
 
 @keyframes animacionHoverItemServicios {
     0% {
-        transform: translate(-50%,-50%) scale(0.5);
+        opacity: .5;
     }
 
     100% {
-        transform: translate(-50%,-50%) scale(1);
+        opacity: 1;
     }
 }
 
