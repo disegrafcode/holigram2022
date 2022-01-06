@@ -2,18 +2,23 @@
     --customHoligram_v1: #083a54;
     --customHoligram_v2: #141b2b;
 }
-::-webkit-input-placeholder { 
+
+::-webkit-input-placeholder {
     color: white !important;
-  }
-  ::-moz-placeholder {
+}
+
+::-moz-placeholder {
     color: white !important;
-  }
-  :-ms-input-placeholder { 
+}
+
+:-ms-input-placeholder {
     color: white !important;
-  }
-  :-moz-placeholder { 
+}
+
+:-moz-placeholder {
     color: white !important;
-  }
+}
+
 .backgroundCover {
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,18 +39,16 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
 }
 
-.customListBody16 li
-{
+.customListBody16 li {
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
 }
-.customListBody16 li a
-{
+
+.customListBody16 li a {
     color: var(--customHoligram_v2);
 }
 
-.customListBody16 li:hover
-{
+.customListBody16 li:hover {
     font-weight: bold;
 }
 
@@ -190,17 +193,16 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
 .navbarCustomLight .logoLightVersion, .navbarCustomLight .iconLightVersion {
     display: block;
 }
-.navbarCustomDark .idioma
-{
+
+.navbarCustomDark .idioma {
     /*display: none;*/
     background-color: black;
     color: white !important;
 }
 
-.navbarCustomLight .idioma
-{
+.navbarCustomLight .idioma {
     background-color: #f0f0f0;
-    border-color: rgb(0,0,0, .25);
+    border-color: rgb(0, 0, 0, .25);
 }
 
 /* PAGINA PRINCIPAL */
@@ -235,37 +237,36 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     background-repeat: no-repeat;
 }
 
-.itemTeam
-{ 
+.itemTeam {
     cursor: pointer;
     /*grayscale for background image*/
-    -webkit-filter: grayscale(1); 
-    -webkit-filter: grayscale(100%); 
+    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
-    filter: gray; 
+    filter: gray;
     filter: grayscale(100%);
     overflow: hidden;
     border-radius: 0px;
-    border:solid 1px rgba(0, 0, 0, 0);
+    border: solid 1px rgba(0, 0, 0, 0);
 
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
-    
+
 }
-.itemTeam:hover,.itemTeam:active
-{
-    -webkit-filter: grayscale(0); 
-    -webkit-filter: grayscale(0%); 
+
+.itemTeam:hover, .itemTeam:active {
+    -webkit-filter: grayscale(0);
+    -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
-    filter: none; 
+    filter: none;
     filter: grayscale(0%);
     border-radius: 25px;
-    border:solid 1px rgba(0, 0, 0, 0.25);
+    border: solid 1px rgba(0, 0, 0, 0.25);
 
-    
+
 }
 
 /* PAGINA PRINCIPAL */
@@ -367,36 +368,37 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
 .itemNosotros {
     min-width: 200px;
 }
-.itemNosotros p
-{
+
+.itemNosotros p {
     font-size: 14px;
 }
-.itemNosotrosInside
-{
+
+.itemNosotrosInside {
     min-height: 500px;
     background-color: white;
 }
-.swiper-slide-active .itemNosotrosInside
-{
+
+.swiper-slide-active .itemNosotrosInside {
     animation: AnimacionEntradaItemNosotros .8s ease 0s 1 normal forwards;
     position: relative;
     z-index: 25;
 }
+
 @keyframes AnimacionEntradaItemNosotros {
     0% {
-      opacity: 0;
-      transform: scale(1.4);
-      transform-origin: 50% 100%;
+        opacity: 0;
+        transform: scale(1.4);
+        transform-origin: 50% 100%;
     }
-  
+
     100% {
-      opacity: 1;
-      transform: scale(1);
-      transform-origin: 50% 100%;
+        opacity: 1;
+        transform: scale(1);
+        transform-origin: 50% 100%;
     }
 }
-.itemNosotrosImagen
-{
+
+.itemNosotrosImagen {
     height: 90%;
     margin-top: 5%;
     background-position: center;
@@ -404,21 +406,23 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     cursor: pointer;
 
 }
-.swiper-slide-active .itemNosotrosImagen
-{
+
+.swiper-slide-active .itemNosotrosImagen {
     animation: itemNosotrosImagenAnimacion .8s ease 0s 1 normal forwards;
 }
+
 @keyframes itemNosotrosImagenAnimacion {
     0% {
-      opacity: 0;
-      transform: translateX(250px);
+        opacity: 0;
+        transform: translateX(250px);
     }
-  
+
     100% {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
 }
+
 #sliderNosotros {
     width: 100%;
     height: 100%;
@@ -437,8 +441,7 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
 }
 
 
-.listTeamNosotros
-{
+.listTeamNosotros {
     padding: 0 0 23px 1em;
     line-height: 26px;
     list-style: none;
@@ -461,21 +464,22 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     padding-left: 0.65%;
     padding-right: 0.65%;
 }
+
 .listTeamNosotros>li:nth-child(15n) {
     width: 20%;
     padding-left: 0.65%;
     padding-right: 0.65%;
 }
-.listTeamNosotrosActive, .listTeamNosotrosExit
-{
+
+.listTeamNosotrosActive, .listTeamNosotrosExit {
     height: 830px;
     position: initial;
 }
-.infoTeamNosotros
-{
+
+.infoTeamNosotros {
     width: 100%;
     max-width: 800px;
-    
+
     position: absolute;
     display: none;
     left: 50%;
@@ -486,57 +490,55 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     font-size: 14px;
     transform: translateX(-50%)
 }
-.listTeamNosotrosActive .infoTeamNosotros
-{
+
+.listTeamNosotrosActive .infoTeamNosotros {
     display: block;
     animation: animacionEntradaInfoTeamNosotros 1s ease 0s 1 normal forwards;
 }
 
-.listTeamNosotrosExit .infoTeamNosotros
-{
+.listTeamNosotrosExit .infoTeamNosotros {
     display: block;
     animation: animacionSalidaInfoTeamNosotros 1s ease 0s 1 normal forwards;
 }
 
 @keyframes animacionEntradaInfoTeamNosotros {
     0% {
-      opacity: 0;
-      transform: rotateX(70deg) translateX(-50%);
-      transform-origin: top;
+        opacity: 0;
+        transform: rotateX(70deg) translateX(-50%);
+        transform-origin: top;
     }
-  
+
     100% {
-      opacity: 1;
-      transform: rotateX(0deg) translateX(-50%);
-      transform-origin: top;
+        opacity: 1;
+        transform: rotateX(0deg) translateX(-50%);
+        transform-origin: top;
     }
-  }
+}
 
 @keyframes animacionSalidaInfoTeamNosotros {
     0% {
-      opacity: 1;
-      transform: rotateX(0deg) translateX(-50%);
-      transform-origin: top;
+        opacity: 1;
+        transform: rotateX(0deg) translateX(-50%);
+        transform-origin: top;
     }
-  
+
     100% {
         opacity: 0;
         transform: rotateX(70deg) translateX(-50%);
         transform-origin: top;
     }
-  }
+}
 
-.imgTeamNosotros
-{
+.imgTeamNosotros {
     cursor: pointer;
     /*grayscale for background image*/
-    -webkit-filter: grayscale(1); 
-    -webkit-filter: grayscale(100%); 
+    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
-    filter: gray; 
+    filter: gray;
     filter: grayscale(100%);
 
-    border:solid 1px rgba(0, 0, 0, 0);
+    border: solid 1px rgba(0, 0, 0, 0);
 
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
@@ -544,37 +546,36 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
 }
-.listTeamNosotrosActive .imgTeamNosotros
-{
-    -webkit-filter: grayscale(0); 
-    -webkit-filter: grayscale(0%); 
+
+.listTeamNosotrosActive .imgTeamNosotros {
+    -webkit-filter: grayscale(0);
+    -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
-    filter: white; 
+    filter: white;
     filter: grayscale(0%);
 }
 
-.listTeamNosotros>li:hover .imgTeamNosotros,.listTeamNosotros>li:active .imgTeamNosotros
-{
+.listTeamNosotros>li:hover .imgTeamNosotros, .listTeamNosotros>li:active .imgTeamNosotros {
     /*grayscale for background image*/
-    -webkit-filter: grayscale(0); 
-    -webkit-filter: grayscale(0%); 
+    -webkit-filter: grayscale(0);
+    -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
-    filter: white; 
+    filter: white;
     filter: grayscale(0%);
 
-    border:solid 1px rgba(0, 0, 0, 0.25);
+    border: solid 1px rgba(0, 0, 0, 0.25);
 }
-.miniNavBarNosotros
-{
+
+.miniNavBarNosotros {
     /*margin-top: 50px;*/
     margin-bottom: 50px;
 }
-.miniNavBarNosotros li
-{
+
+.miniNavBarNosotros li {
     font-size: 14px;
 }
-.miniNavBarActive
-{
+
+.miniNavBarActive {
     position: fixed;
     margin: 0;
     top: 0;
@@ -583,7 +584,7 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
     background-color: rgb(247, 247, 247);
     padding-top: 15px;
     padding-bottom: 15px;
-    
+
 }
 
 @media only screen and (max-width:991px) {
@@ -591,26 +592,27 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
         border-right: none;
     }
 }
+
 @media only screen and (max-width:767px) {
-    .listTeamNosotros>li,.listTeamNosotros>li:nth-child(1),.listTeamNosotros>li:nth-child(15n) {
+    .listTeamNosotros>li, .listTeamNosotros>li:nth-child(1), .listTeamNosotros>li:nth-child(15n) {
         margin-bottom: 36px;
         display: inline-block;
         margin: 10px 5px 20px 5px;
         vertical-align: top;
         width: calc(100% - 10px);
     }
-    .infoTeamNosotros
-    {
+
+    .infoTeamNosotros {
         max-height: 660px;
         overflow: auto;
     }
-    .infoTeamNosotros img
-    {
+
+    .infoTeamNosotros img {
         max-width: 200px !important;
         margin-bottom: 20px;
     }
-    .listTeamNosotrosActive, .listTeamNosotrosExit
-    {
+
+    .listTeamNosotrosActive, .listTeamNosotrosExit {
         height: 1100px;
         position: initial;
     }
@@ -626,21 +628,21 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
 /* NOSOTROS */
 
 /* SERVICIOS */
-.itemPageServicios
-{
+.itemPageServicios {
     position: relative;
     overflow: hidden;
     display: block;
 }
-.itemPageServicios h6{
-    background-color: rgba(3,58,85,.8);
+
+.itemPageServicios h6 {
+    background-color: rgba(3, 58, 85, .8);
     font-size: 18px;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.itemPageServicios img
-{
+
+.itemPageServicios img {
     opacity: .5;
 }
 
@@ -850,3 +852,16 @@ idioma .logoDarkVersion, .navbarCustomDark .iconDarkVersion {
 }
 
 /* SOLUCIONES */
+
+/* CONTACTO */
+.formularioContacto {
+    height: calc(100vh - (71px + 56px + 68px));
+    overflow: auto;
+}
+
+@media only screen and (max-width:768px) {
+    .formularioContacto {
+        height: auto;
+    }
+}
+/* CONTACTO */

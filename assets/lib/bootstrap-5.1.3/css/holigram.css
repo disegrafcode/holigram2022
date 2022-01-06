@@ -114,7 +114,7 @@
   
   
   /* FOR INPUTS */
-  --bs-padding-inputs: 15px 10px 15px 10px;
+  --bs-padding-inputs: 10px 10px 10px 10px;
   --bs-border-radius-inputs: 0;
   --bs-box-shadow-inputs: inset 2px 2px 8px rgba(0,0,255,.05);
   --bs-border-width-inputs: 1px;

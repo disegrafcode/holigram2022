@@ -88,6 +88,7 @@ let sectionStart = document.getElementById("hero");
 let offsetBottomMiniNav = sectionStart.offsetTop + sectionStart.offsetHeight;
 let customMiniNav = document.getElementById("miniNavBarNosotros");
 let arrayElementsMiniNavBar = document.getElementsByClassName("miniNavBarItem");
+let arrayItemsMiniNavBar = document.getElementById("miniNavBarNosotros").querySelectorAll(".nav-link");
 let currentDivMiniNavBar = null;
 
 
@@ -96,13 +97,11 @@ function navStickyForServices() {
     {
         return;
     }
-
-    getCurrentDivMiniNavBar();
-    
     if (window.pageYOffset >= offsetBottomMiniNav) {
         customMiniNav.classList.add("animate__animated");
         customMiniNav.classList.add("animate__slideInDown");
         customMiniNav.classList.add("miniNavBarActive");
+        getCurrentDivMiniNavBar();
     }
     else {
         customMiniNav.classList.remove("miniNavBarActive");
@@ -112,9 +111,20 @@ function navStickyForServices() {
     }
 }
 
-function getCurrentDivMiniNavBar()
-{
-    console.log(arrayElementsMiniNavBar);
-    /*let tempArray = */
+function getCurrentDivMiniNavBar() {
+    let currentDivActive = undefined;
+    for (i = 0; i < arrayElementsMiniNavBar.length; i++) {
+        if (window.pageYOffset >= arrayElementsMiniNavBar[i].offsetTop - 5) {
+            currentDivActive = arrayElementsMiniNavBar[i].getAttribute("id");
+        }
+    }
+    for (j = 0; j < arrayItemsMiniNavBar.length; j++) {
+        arrayItemsMiniNavBar[j].classList.remove("nav-active");
+    }
+    let itemSelected = document.getElementById("miniNavBarNosotros").querySelector(`[href^='#${currentDivActive}']`);
+    if (itemSelected != null) {
+        itemSelected.classList.add("nav-active");
+    }
+
 }
 /* MINI NAVBAR */
